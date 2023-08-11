@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .map-grid-container {
+    @apply grid grid-cols-3 grid-rows-6;
+  }
+  .map-grid-left {
+    @apply col-span-1 row-span-full;
+  }
+  .map-grid-right {
+    @apply col-span-2 row-span-full;
+  }
+  .accordion-summary-head {
+    @apply font-medium text-sm text-gray-400;
+  }
+  .accordion-summary-text {
+    @apply font-medium text-base text-gray-400;
+  }
+  .accordion-details-text {
+    @apply font-medium text-base text-gray-400;
+  }
+  .TPOpt {
+    @apply p-2 col-span-1 row-span-1 flex bg-slate-100 flex-col items-center justify-evenly disabled:bg-slate-300 transition-colors duration-300;
+  }
+  .acc-btns {
+    @apply transition-colors duration-300 border border-sky-600 w-full py-2 rounded hover:bg-sky-100;
+  }
+}
